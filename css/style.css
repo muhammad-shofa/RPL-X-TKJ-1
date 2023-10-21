@@ -74,6 +74,7 @@ nav .humberger img {
   border-radius: 50%;
   padding: 5px;
   margin-top: 20px;
+  display: none;
 }
 
 /* hero */
@@ -224,6 +225,10 @@ nav .humberger img {
     position: absolute;
     right: -500px;
     text-align: end;
+  }
+
+  nav .humberger img {
+    display: block;
   }
 
   /* hero */
