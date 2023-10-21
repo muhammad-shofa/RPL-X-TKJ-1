@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --primary: #0f0f0f;
+  /* --secondary: #232d3f; */
+  --secondary: #272829;
+  --white-accent: #eeeeee;
+  --red-accent: #cf0a0a;
+}
+
+body {
+  min-height: 3000px;
+}
+
+/* nav */
+
+.container-nav {
+  width: 100%;
+  height: max-content;
+  position: fixed;
+  background-color: var(--primary);
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(4px);
+  color: var(--white-accent);
+  z-index: 999;
+}
+
+nav {
+  max-width: 1200px;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  line-height: 80px;
+  margin: auto;
+  padding: 0 20px;
+  transition: 0.3s ease-in-out;
+}
+
+.sticky {
+  /* height: 80px; */
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: var(--white-accent);
+  font-weight: 600;
+  padding-bottom: 1px;
+  transition: 0.1s ease-in-out;
+}
+
+nav ul li a:hover {
+  padding-bottom: 2px;
+  border-bottom: 2px solid var(--white-accent);
+}
+
+nav .humberger img {
+  width: 30px;
+  height: 30px;
+  background-color: var(--white-accent);
+  border-radius: 50%;
+  padding: 5px;
+  margin-top: 20px;
+}
+
+/* hero */
+
+.container-hero {
+  width: 100%;
+  height: max-content;
+  padding-bottom: 100px;
+  background-color: var(--primary);
+}
+
+.hero {
+  max-width: 1200px;
+  height: 850px;
+  margin: auto;
+  padding: 150px 20px;
+}
+
+.hero .text-content {
+  max-width: 100%;
+  height: max-content;
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 55px;
+  color: var(--white-accent);
+}
+
+.text-content u {
+  color: var(--primary);
+}
+
+.hero .logo-spin img {
+  width: 350px;
+  border-radius: 50%;
+  opacity: 0.2;
+  position: absolute;
+  left: -100px;
+  top: -50px;
+  animation-name: spinning;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes spinning {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.scroll-down {
+  padding-top: 150px;
+  text-align: center;
+}
+
+.scroll-down a {
+  color: var(--white-accent);
+}
+
+.scroll-down p {
+  animation-name: scrolldown;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes scrolldown {
+  0% {
+    margin-top: 10px;
+  }
+
+  50% {
+    margin-top: -10px;
+  }
+
+  100% {
+    margin-top: 10px;
+  }
+}
+
+/* waves */
+.waves {
+  width: auto;
+  height: 400px;
+  background-image: url(../assets/images/wave.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: -370px;
+}
+
+/* our class */
+
+.container-our-class {
+  width: 100%;
+  height: max-content;
+  padding-bottom: 100px;
+  background-color: var(--secondary);
+}
+
+.our-class {
+  max-width: 1200px;
+  min-height: 900px;
+  margin: auto;
+  padding: 150px 20px;
+}
+
+.line {
+  width: 5px;
+  height: 1000px;
+  background-color: var(--white-accent);
+  border-radius: 5px;
+  position: absolute;
+  left: 50%;
+  top: 550px;
+}
+
+.copyright p {
+  text-align: center;
+  color: var(--white-accent);
+}
+
+.copyright p a {
+  color: var(--white-accent);
+}
+
+.copyright p a:hover {
+  text-decoration: underline;
+}
+
+/* Media Query */
+@media only screen and (max-width: 700px) {
+  /* nav */
+  nav .show-ul {
+    display: block;
+    margin-top: 80px;
+    position: absolute;
+    right: 20px;
+    text-align: end;
+  }
+
+  nav .hidden-ul {
+    display: block;
+    margin-top: 80px;
+    position: absolute;
+    right: -500px;
+    text-align: end;
+  }
+
+  /* hero */
+  .hero .text-content {
+    font-size: 35px;
+  }
+}
