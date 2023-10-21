@@ -13,7 +13,7 @@
         <span><h1>RPL X TKJ 1</h1></span>
         <ul class="hidden-ul">
           <li>
-            <a href="#home">Home</a>
+            <a href="#hero">Home</a>
           </li>
           <li>
             <a href="#class">Our Class</a>
@@ -28,14 +28,19 @@
             <a href="#contact">Contact Us</a>
           </li>
         </ul>
-        <div class="humberger">
-          <img src="./assets/icons/filter-right.svg" alt="" />
+        <div class="humberger" id="humberger">
+          <img
+            class="show-right"
+            id="right-icon"
+            src="./assets/icons/filter-right.svg"
+          />
+          <img class="hidden-x" id="x-icon" src="./assets/icons/x.svg" />
         </div>
       </nav>
     </div>
     <!-- hero -->
     <div class="container-hero">
-      <section class="hero">
+      <section class="hero" id="hero">
         <div class="text-content">
           <h1 data-aos="fade-right" data-aos-duration="1000">R</h1>
           <h1 data-aos="fade-right" data-aos-duration="850">P</h1>
@@ -49,6 +54,7 @@
           <u>.</u>
           <h1 data-aos="fade-left" data-aos-duration="1150">1</h1>
         </div>
+        <p>Express thoughts and moods into a program or app</p>
         <div class="logo-spin">
           <img src="./assets/images/logo-kls.jpg" />
         </div>
@@ -78,6 +84,8 @@
           >
           2023.
         </p>
+        <br />
+        <p>V 0.3.0</p>
       </div>
     </div>
     <!-- js -->
