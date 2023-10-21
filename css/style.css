@@ -26,10 +26,9 @@ body {
 .container-nav {
   width: 100%;
   height: max-content;
+  padding: 0 10px;
   position: fixed;
-  background-color: var(--primary);
-  background-color: rgba(0, 0, 0, 0.6);
-  backdrop-filter: blur(4px);
+  background: none;
   color: var(--white-accent);
   z-index: 999;
 }
@@ -42,11 +41,16 @@ nav {
   line-height: 80px;
   margin: auto;
   padding: 0 20px;
-  transition: 0.3s ease-in-out;
+  border-radius: 50px;
+  transition: 0.2s ease-in-out;
 }
 
 .sticky {
-  /* height: 80px; */
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(4px);
+  margin-top: 10px;
+  border-radius: 50px;
+  border: 2px solid var(--white-accent);
 }
 
 nav ul {
@@ -106,6 +110,11 @@ nav .humberger img {
 
 .text-content u {
   color: var(--primary);
+}
+
+.hero p {
+  color: var(--white-accent);
+  text-align: center;
 }
 
 .hero .logo-spin img {
@@ -213,22 +222,50 @@ nav .humberger img {
   /* nav */
   nav .show-ul {
     display: block;
-    margin-top: 80px;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(2px);
+    border: 1px solid var(--white-accent);
+    border-radius: 10px;
+    margin-top: 100px;
+    padding: 0 20px;
     position: absolute;
-    right: 20px;
+    right: 10px;
     text-align: end;
+    transition: 0.3s ease-in-out;
   }
 
   nav .hidden-ul {
     display: block;
-    margin-top: 80px;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(2px);
+    border: 1px solid var(--white-accent);
+    border-radius: 10px;
+    margin-top: 100px;
+    padding: 0 20px;
+
     position: absolute;
     right: -500px;
     text-align: end;
+    transition: 0.3s ease-in-out;
   }
 
   nav .humberger img {
     display: block;
+  }
+
+  nav .humberger .show-right {
+    display: block;
+  }
+  nav .humberger .hidden-right {
+    display: none;
+  }
+
+  nav .humberger .show-x {
+    display: block;
+  }
+
+  nav .humberger .hidden-x {
+    display: none;
   }
 
   /* hero */
