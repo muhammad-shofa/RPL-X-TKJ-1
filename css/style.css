@@ -197,7 +197,7 @@ nav .humberger img {
 
 .line-y-our-class {
   width: 5px;
-  height: 1300px;
+  height: 1500px;
   background-color: var(--white-accent);
   border-radius: 5px;
   position: absolute;
@@ -207,8 +207,6 @@ nav .humberger img {
 
 .our-class h2 {
   width: max-content;
-  /* position: absolute; */
-  /* text-align: center; */
   margin: auto;
   left: 42%;
   color: var(--primary);
@@ -216,6 +214,11 @@ nav .humberger img {
   font-size: 45px;
 }
 
+.our-class .all-class {
+  display: flex;
+}
+
+/* rpl */
 .our-class .rpl-class {
   max-width: 50%;
   min-height: 300px;
@@ -223,10 +226,10 @@ nav .humberger img {
 }
 
 .rpl-class .line-x {
-  width: 50%;
+  width: 55%;
   height: 5px;
   background-color: var(--white-accent);
-  margin-left: 50%;
+  margin-left: 45%;
   display: flex;
   justify-content: space-between;
 }
@@ -252,7 +255,7 @@ nav .humberger img {
 .card-rpl-class {
   margin-top: 100px;
   text-align: center;
-  padding: 0 20px;
+  margin-right: 50px;
 }
 
 .content-card-rpl-class {
@@ -300,6 +303,76 @@ nav .humberger img {
 
 .show-description-icon .hidden-up {
   display: none;
+}
+
+/* tkj */
+.our-class .tkj-class {
+  max-width: 50%;
+  min-height: 300px;
+  margin-top: 500px;
+}
+
+.tkj-class .line-x {
+  width: 55%;
+  height: 5px;
+  background-color: var(--white-accent);
+  margin-right: 45%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.line-y-in-x {
+  width: 5px;
+  height: 110px;
+  background-color: var(--white-accent);
+}
+
+.circle-tkj-in-line-x {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--white-accent);
+  margin-top: -25px;
+  margin-left: -27px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-tkj-class {
+  margin-top: 100px;
+  text-align: center;
+  margin-left: 50px;
+}
+
+.content-card-tkj-class {
+  background-color: var(--white-accent);
+  padding-bottom: 20px;
+  border-radius: 10px;
+}
+
+.content-card-tkj-class .img-class {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.content-card-tkj-class p {
+  padding: 0 10px;
+  font-size: 14px;
+}
+
+.content-card-tkj-class .show-description-icon {
+  display: none;
+}
+
+.content-card-tkj-class .hidden-description {
+  display: none;
+}
+
+.content-card-tkj-class .show-description {
+  display: block;
+  margin: auto;
 }
 
 /* copyright */
@@ -381,5 +454,9 @@ nav .humberger img {
   .content-card-rpl-class .show-description-icon {
     display: block;
     margin: auto;
+  }
+
+  .content-card-rpl-class .dekstop-description {
+    display: none;
   }
 }
