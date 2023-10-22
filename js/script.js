@@ -31,3 +31,26 @@ function showUl() {
     xIcon.classList.remove("show-x");
   }
 }
+
+var showDescriptionIcon = document.getElementById("show-description-icon");
+showDescriptionIcon.addEventListener("click", showRplDescription);
+function showRplDescription() {
+  const rplDescription = document.getElementById("rpl-description");
+  const downIconDescription = document.getElementById("down-icon-description");
+  const upIconDescription = document.getElementById("up-icon-description");
+  if (rplDescription.classList == "hidden-description") {
+    rplDescription.classList.remove("hidden-description");
+    rplDescription.classList.add("show-description");
+    downIconDescription.classList.remove("show-down");
+    downIconDescription.classList.add("hidden-down");
+    upIconDescription.classList.remove("hidden-up");
+    upIconDescription.classList.add("show-up");
+  } else {
+    rplDescription.classList.remove("show-description");
+    rplDescription.classList.add("hidden-description");
+    downIconDescription.classList.add("show-down");
+    downIconDescription.classList.remove("hidden-down");
+    upIconDescription.classList.add("hidden-up");
+    upIconDescription.classList.remove("show-up");
+  }
+}
