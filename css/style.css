@@ -13,6 +13,7 @@
   --primary: #0f0f0f;
   /* --secondary: #232d3f; */
   --secondary: #272829;
+  /* --secondary: #810ca8; */
   --white-accent: #eeeeee;
   --red-accent: #cf0a0a;
 }
@@ -172,7 +173,7 @@ nav .humberger img {
 .waves {
   width: auto;
   height: 400px;
-  background-image: url(../assets/images/wave.svg);
+  background-image: url(../assets/images/wave-square.svg);
   background-size: cover;
   background-repeat: no-repeat;
   margin-top: -370px;
@@ -194,15 +195,114 @@ nav .humberger img {
   padding: 150px 20px;
 }
 
-.line {
+.line-y-our-class {
   width: 5px;
-  height: 1000px;
+  height: 1300px;
   background-color: var(--white-accent);
   border-radius: 5px;
   position: absolute;
   left: 50%;
   top: 550px;
 }
+
+.our-class h2 {
+  width: max-content;
+  /* position: absolute; */
+  /* text-align: center; */
+  margin: auto;
+  left: 42%;
+  color: var(--primary);
+  background-color: var(--white-accent);
+  font-size: 45px;
+}
+
+.our-class .rpl-class {
+  max-width: 50%;
+  min-height: 300px;
+  margin-top: 100px;
+}
+
+.rpl-class .line-x {
+  width: 50%;
+  height: 5px;
+  background-color: var(--white-accent);
+  margin-left: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.line-y-in-x {
+  width: 5px;
+  height: 110px;
+  background-color: var(--white-accent);
+}
+
+.circle-in-line-x {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--white-accent);
+  margin-top: -25px;
+  margin-right: -27px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-rpl-class {
+  margin-top: 100px;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.content-card-rpl-class {
+  background-color: var(--white-accent);
+  padding-bottom: 20px;
+  border-radius: 10px;
+}
+
+.content-card-rpl-class .img-class {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.content-card-rpl-class p {
+  padding: 0 10px;
+}
+
+.content-card-rpl-class .show-description-icon {
+  display: none;
+}
+
+.content-card-rpl-class .hidden-description {
+  display: none;
+}
+
+.content-card-rpl-class .show-description {
+  display: block;
+  margin: auto;
+}
+
+.show-description-icon .show-down {
+  display: block;
+  margin: auto;
+}
+
+.show-description-icon .hidden-down {
+  display: none;
+}
+
+.show-description-icon .show-up {
+  display: block;
+  margin: auto;
+}
+
+.show-description-icon .hidden-up {
+  display: none;
+}
+
+/* copyright */
 
 .copyright p {
   text-align: center;
@@ -271,5 +371,15 @@ nav .humberger img {
   /* hero */
   .hero .text-content {
     font-size: 35px;
+  }
+
+  /* our class */
+  .content-card-rpl-class p {
+    display: none;
+  }
+
+  .content-card-rpl-class .show-description-icon {
+    display: block;
+    margin: auto;
   }
 }
