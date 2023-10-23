@@ -32,12 +32,16 @@ function showUl() {
   }
 }
 
-var showDescriptionIcon = document.getElementById("show-description-icon");
-showDescriptionIcon.addEventListener("click", showRplDescription);
+var showRplDescriptionIcon = document.getElementById(
+  "show-rpl-description-icon"
+);
+showRplDescriptionIcon.addEventListener("click", showRplDescription);
 function showRplDescription() {
   const rplDescription = document.getElementById("rpl-description");
-  const downIconDescription = document.getElementById("down-icon-description");
-  const upIconDescription = document.getElementById("up-icon-description");
+  const downIconDescription = document.getElementById(
+    "down-rpl-icon-description"
+  );
+  const upIconDescription = document.getElementById("up-rpl-icon-description");
   if (rplDescription.classList == "hidden-description") {
     rplDescription.classList.remove("hidden-description");
     rplDescription.classList.add("show-description");
@@ -48,6 +52,33 @@ function showRplDescription() {
   } else {
     rplDescription.classList.remove("show-description");
     rplDescription.classList.add("hidden-description");
+    downIconDescription.classList.add("show-down");
+    downIconDescription.classList.remove("hidden-down");
+    upIconDescription.classList.add("hidden-up");
+    upIconDescription.classList.remove("show-up");
+  }
+}
+
+var showTkjDescriptionIcon = document.getElementById(
+  "show-tkj-description-icon"
+);
+showTkjDescriptionIcon.addEventListener("click", showTkjDescription);
+function showTkjDescription() {
+  const tkjDescription = document.getElementById("tkj-description");
+  const downIconDescription = document.getElementById(
+    "down-tkj-icon-description"
+  );
+  const upIconDescription = document.getElementById("up-tkj-icon-description");
+  if (tkjDescription.classList == "hidden-description") {
+    tkjDescription.classList.remove("hidden-description");
+    tkjDescription.classList.add("show-description");
+    downIconDescription.classList.remove("show-down");
+    downIconDescription.classList.add("hidden-down");
+    upIconDescription.classList.remove("hidden-up");
+    upIconDescription.classList.add("show-up");
+  } else {
+    tkjDescription.classList.remove("show-description");
+    tkjDescription.classList.add("hidden-description");
     downIconDescription.classList.add("show-down");
     downIconDescription.classList.remove("hidden-down");
     upIconDescription.classList.add("hidden-up");
