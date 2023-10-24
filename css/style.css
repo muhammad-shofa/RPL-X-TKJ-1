@@ -424,7 +424,7 @@ nav .humberger img {
   height: max-content;
   display: flex;
   gap: 20px;
-  background-color: var(--secondary);
+  /* background-color: var(--secondary); */
   border-radius: 10px;
   padding: 20px 10px;
   margin-top: 50px;
@@ -432,10 +432,93 @@ nav .humberger img {
   overflow-x: scroll;
 }
 
+.members .slide-right {
+  width: 40px;
+  height: 40px;
+  background-color: var(--white-accent);
+  padding: 5px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 20px;
+  margin-top: 300px;
+  z-index: 9;
+  animation-name: slide-right-animation;
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
+}
+
+@keyframes slide-right-animation {
+  0% {
+    margin-right: 0;
+  }
+
+  50% {
+    margin-right: -10px;
+  }
+
+  100% {
+    margin-right: 0;
+  }
+}
+
+.slide-right img {
+  transform: rotateZ(-90deg);
+}
+
+.slide-right:hover {
+  background-color: var(--blue-accent);
+  transition: 0.2s ease-in-out;
+}
+
+.members .slide-left {
+  width: 40px;
+  height: 40px;
+  background-color: var(--white-accent);
+  padding: 5px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 20px;
+  margin-top: 300px;
+  z-index: 9;
+  animation-name: slide-left-animation;
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
+}
+
+@keyframes slide-left-animation {
+  0% {
+    margin-left: 0;
+  }
+
+  50% {
+    margin-left: -10px;
+  }
+
+  100% {
+    margin-left: 0;
+  }
+}
+
+.slide-left img {
+  transform: rotateZ(90deg);
+}
+
+.slide-left:hover {
+  background-color: var(--blue-accent);
+  transition: 0.2s ease-in-out;
+}
+
 .all-card-members .card-members {
   width: 350px;
   height: max-content;
-  background-color: var(--primary);
+  background-color: var(--secondary);
+  /* background-color: var(--primary); */
   border-radius: 5px;
   text-align: center;
   padding: 15px;
@@ -574,5 +657,22 @@ nav .humberger img {
 
   .content-card-tkj-class .dekstop-description {
     display: none;
+  }
+
+  /* members */
+
+  .all-card-members .card-members {
+    width: 330px;
+  }
+
+  .card-members img {
+    width: 300px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+
+  .text-card-members img {
+    width: 35px;
+    height: 35px;
   }
 }
