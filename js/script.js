@@ -85,3 +85,31 @@ function showTkjDescription() {
     upIconDescription.classList.remove("show-up");
   }
 }
+
+
+const allCardMembers = document.getElementById("all-card-members");
+const slideRight = document.getElementById("slide-right");
+const slideLeft = document.getElementById("slide-left");
+
+let scrollAmount = 0;
+
+slideLeft.addEventListener("click", function () {
+  if (scrollAmount < 0) {
+    scrollAmount = 350;
+  }
+
+  scrollAmount -= 350;
+  allCardMembers.scrollTo({
+    left: scrollAmount,
+    behavior: "smooth",
+  });
+});
+
+slideRight.addEventListener("click", function () {
+  scrollAmount += 350;
+  allCardMembers.scrollTo({
+    left: scrollAmount,
+    behavior: "smooth",
+  });
+});
+
