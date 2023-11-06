@@ -86,30 +86,56 @@ function showTkjDescription() {
   }
 }
 
+// slide rpl
+const allCardMembersRpl = document.getElementById("all-card-members-rpl");
+const slideRightRpl = document.getElementById("slide-right-rpl");
+const slideLeftRpl = document.getElementById("slide-left-rpl");
 
-const allCardMembers = document.getElementById("all-card-members");
-const slideRight = document.getElementById("slide-right");
-const slideLeft = document.getElementById("slide-left");
+let scrollAmountRpl = 0;
 
-let scrollAmount = 0;
-
-slideLeft.addEventListener("click", function () {
-  if (scrollAmount < 0) {
-    scrollAmount = 350;
+slideLeftRpl.addEventListener("click", function () {
+  if (scrollAmountRpl < 0) {
+    scrollAmount = 340;
   }
 
-  scrollAmount -= 350;
-  allCardMembers.scrollTo({
-    left: scrollAmount,
+  scrollAmountRpl -= 345;
+  allCardMembersRpl.scrollTo({
+    left: scrollAmountRpl,
     behavior: "smooth",
   });
 });
 
-slideRight.addEventListener("click", function () {
-  scrollAmount += 350;
-  allCardMembers.scrollTo({
-    left: scrollAmount,
+slideRightRpl.addEventListener("click", function () {
+  scrollAmountRpl += 345;
+  allCardMembersRpl.scrollTo({
+    left: scrollAmountRpl,
     behavior: "smooth",
   });
 });
 
+// slide tkj
+const allCardMembersTkj = document.getElementById("all-card-members-tkj");
+const slideRightTkj = document.getElementById("slide-right-tkj");
+const slideLeftTkj = document.getElementById("slide-left-tkj");
+
+let scrollAmountTkj = 0;
+
+slideLeftTkj.addEventListener("click", function () {
+  if (scrollAmountTkj < 0) {
+    scrollAmountTkj = 350;
+  }
+
+  scrollAmountTkj -= 320;
+  allCardMembersTkj.scrollTo({
+    left: scrollAmountTkj,
+    behavior: "smooth",
+  });
+});
+
+slideRightTkj.addEventListener("click", function () {
+  scrollAmountTkj += 320;
+  allCardMembersTkj.scrollTo({
+    left: scrollAmountTkj,
+    behavior: "smooth",
+  });
+});
