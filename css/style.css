@@ -432,7 +432,8 @@ nav .humberger img {
   overflow-x: scroll;
 }
 
-.members .slide-right {
+/* slide rpl */
+.members .slide-right-rpl {
   width: 40px;
   height: 40px;
   background-color: var(--white-accent);
@@ -464,16 +465,11 @@ nav .humberger img {
   }
 }
 
-.slide-right img {
+.slide-right-rpl img {
   transform: rotateZ(-90deg);
 }
 
-.slide-right:hover {
-  background-color: var(--blue-accent);
-  transition: 0.2s ease-in-out;
-}
-
-.members .slide-left {
+.members .slide-left-rpl {
   width: 40px;
   height: 40px;
   background-color: var(--white-accent);
@@ -505,27 +501,96 @@ nav .humberger img {
   }
 }
 
-.slide-left img {
+.slide-left-rpl img {
   transform: rotateZ(90deg);
 }
 
-.slide-left:hover {
-  background-color: var(--blue-accent);
-  transition: 0.2s ease-in-out;
+/* slide tkj */
+.members .slide-right-tkj {
+  width: 40px;
+  height: 40px;
+  background-color: var(--white-accent);
+  padding: 5px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 20px;
+  margin-top: 1080px;
+  z-index: 9;
+  animation-name: slide-right-animation;
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
+}
+
+@keyframes slide-right-animation {
+  0% {
+    margin-right: 0;
+  }
+
+  50% {
+    margin-right: -10px;
+  }
+
+  100% {
+    margin-right: 0;
+  }
+}
+
+.slide-right-tkj img {
+  transform: rotateZ(-90deg);
+}
+
+
+.members .slide-left-tkj {
+  width: 40px;
+  height: 40px;
+  background-color: var(--white-accent);
+  padding: 5px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 20px;
+  margin-top: 1080px;
+  z-index: 9;
+  animation-name: slide-left-animation;
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
+}
+
+@keyframes slide-left-animation {
+  0% {
+    margin-left: 0;
+  }
+
+  50% {
+    margin-left: -10px;
+  }
+
+  100% {
+    margin-left: 0;
+  }
+}
+
+.slide-left-tkj img {
+  transform: rotateZ(90deg);
 }
 
 .all-card-members .card-members {
-  width: 350px;
+  width: 320px;
   height: max-content;
   background-color: var(--secondary);
   /* background-color: var(--primary); */
   border-radius: 5px;
   text-align: center;
-  padding: 15px;
+  padding: 10px;
 }
 
 .card-members img {
-  width: 320px;
+  width: 290px;
   border-radius: 10px;
   margin-bottom: 10px;
 }
